@@ -1,17 +1,16 @@
-/*Suma de 3 notas e imprimir resultado*/
+/*imprima el salario semanal de un empleado a partir de horas trabajadas en la semaqna y salario por hora*/
 package ejerciciosprogats;
 import java.util.Scanner;
 public class EjerciciosProgATS {
-
     public static void main(String[] args) {
-    float nota1,nota2,nota3,suma;
-    Scanner Entrada = new Scanner(System.in);
-        System.out.print("Digite las tres calificaciones: ");
-        nota1 = Entrada.nextFloat();
-        nota2 = Entrada.nextFloat();
-        nota3 = Entrada.nextFloat();//guardado de las notas
-        suma=nota1+nota2+nota3;
-        System.out.println("\nLa suma de las notas es: "+suma);
-           
+    int HorasTrabajadas;
+    float ValorHora,Pago;
+    Scanner Datos = new Scanner(System.in);
+        System.out.print("Ingrese el numero de horas trabajadas esta semana: ");
+        HorasTrabajadas = Datos.nextInt();
+        System.out.print("\nIngrese el pago de cadad hora de trabajo: ");
+        ValorHora =  Datos.nextFloat();
+        Pago=HorasTrabajadas*ValorHora;
+        System.out.print("\nLa cantidad a pagar es: "+Pago);
     }  
 }
