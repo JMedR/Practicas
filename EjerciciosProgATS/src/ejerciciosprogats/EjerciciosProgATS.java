@@ -1,16 +1,17 @@
-/*imprima el salario semanal de un empleado a partir de horas trabajadas en la semaqna y salario por hora*/
+/*Guillermo tiene N dolares, Luis la mitad de Guillermo,Juan la mitad de Guillermo y Luis juntos--Calcule e Imprima la cantidad de todos*/
 package ejerciciosprogats;
 import java.util.Scanner;
 public class EjerciciosProgATS {
     public static void main(String[] args) {
-    int HorasTrabajadas;
-    float ValorHora,Pago;
-    Scanner Datos = new Scanner(System.in);
-        System.out.print("Ingrese el numero de horas trabajadas esta semana: ");
-        HorasTrabajadas = Datos.nextInt();
-        System.out.print("\nIngrese el pago de cadad hora de trabajo: ");
-        ValorHora =  Datos.nextFloat();
-        Pago=HorasTrabajadas*ValorHora;
-        System.out.print("\nLa cantidad a pagar es: "+Pago);
+    Double Guillermo, Juan, Luis;
+    Scanner Dinero = new Scanner(System.in);
+        System.out.print("Cuanto dinero tiene Guillermo?: ");
+        Guillermo = Dinero.nextDouble();
+        Juan=Guillermo/2;
+        Luis=(Guillermo+Juan)/2;
+        System.out.println("\n\n\n\n\n\n\n\n\n\nGuillermo Tiene: "+Guillermo);
+        System.out.println("Juan Tiene: "+Juan);
+        System.out.println("Luis Tiene: "+Luis);
+        System.out.println("\n\n\n\n\n\n\n\n");
     }  
 }
