@@ -1,17 +1,21 @@
-/*Guillermo tiene N dolares, Luis la mitad de Guillermo,Juan la mitad de Guillermo y Luis juntos--Calcule e Imprima la cantidad de todos*/
+/*1000 mensuales a trabajador, 150 comision por carro + 5% del valor de carro*/
 package ejerciciosprogats;
 import java.util.Scanner;
 public class EjerciciosProgATS {
     public static void main(String[] args) {
-    Double Guillermo, Juan, Luis;
-    Scanner Dinero = new Scanner(System.in);
-        System.out.print("Cuanto dinero tiene Guillermo?: ");
-        Guillermo = Dinero.nextDouble();
-        Juan=Guillermo/2;
-        Luis=(Guillermo+Juan)/2;
-        System.out.println("\n\n\n\n\n\n\n\n\n\nGuillermo Tiene: "+Guillermo);
-        System.out.println("Juan Tiene: "+Juan);
-        System.out.println("Luis Tiene: "+Luis);
-        System.out.println("\n\n\n\n\n\n\n\n");
+    int Carros,b;
+    float Pago=1000,Vcarro;
+        System.out.print("Cuantos carros vendió en el mes? ");
+        Scanner Entrada = new Scanner(System.in);
+        Carros = Entrada.nextInt();
+        for(int a=0;a<Carros;a++){
+        b=a+1;
+        System.out.print("Ingrese el valor del carro "+b);
+        System.out.print(" : ");
+        Vcarro= Entrada.nextFloat();
+        Pago+=(Vcarro*0.05)+150;
+    }
+        System.out.print("\n\n\n\n\n\n\n\nEl ago final es de: "+Pago);
+        System.out.print("\n\n\n\n\n\n\n\n\n\n\n\n");
     }  
 }
